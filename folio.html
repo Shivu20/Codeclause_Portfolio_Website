@@ -1,0 +1,213 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="folio.css"> 
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anony
+    "></script>
+ </head>
+ <body>
+    <!-- HEADER DESIGN -->
+    <div id="header">
+      <div class="container">
+         <nav>
+            <img src="Images/logo.jpg" class="logo">
+            <ul id="sidemenu">
+               <li><a href="#header">Home</a></li>
+               <li><a href="#About">About</a></li>
+               <li><a href="#services">Services</a></li>
+               <li><a href="#portfolio">Portfolio</a></li>
+               <li><a href="#contact">Contact</a></li>
+               <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+         </nav>
+         <div class="header-text">
+            <p>Front-end Developer</p>
+            <h1>Hi, I'm <span>Shivam</span><br>Gupta From India</h1>
+         </div>
+      </div>
+    </div>
+    <!-- ABOUT SECTION -->
+    <div id="About">
+      <div class="container">
+         <div class="row">
+            <div class="about-col-1">
+               <img src="Images/user.jpg" alt="">
+            </div>
+            <div class="about-col-2">
+               <h1 class="sub-title">About Me</h1>
+               <p>I am Shivam Gupta from Gorakhpur,Uttar-Pradesh.Currently, I am persuing my B-tech Degree from ABES Engineering College,Ghaziabad,U.P.,India. I am a front-end developer who used to design a front-end website for an application. I used to code in languages like C,C++ and Python. I am a hardworking and very enthusiastic person with a goal of learning new technology that can enhance my skill capability and gain more knowledge knowledge.</p>
+               <div class="tab-titles">
+                  <p class="tab-links active-links" onclick="opentab('skills')">Skills</p>
+                  <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                  <p class="tab-links" onclick="opentab('education')">Education</p>
+               </div> 
+               <div class="tab-contents active-tab" id="skills">
+                  <ul>
+                     <li><span>HTML</span></li>
+                     <li><span>CSS</span></li>
+                     <li><span>JavaScript</span></li>
+                     <li><span>Python</span></li>
+                  </ul>
+               </div> 
+               <div class="tab-contents" id="experience">
+                  <ul>
+                     <li><span>May-June 2022</span><br>Web Development Trining at Engineer Core</li>
+                     <li><span>2023</span><br>Introduction to HTML Training at Sololearn</li>
+                  </ul>
+               </div> 
+               <div class="tab-contents" id="education">
+                  <ul>
+                     <li><span>2020-presnet</span><br>Bachelor's of Technology from ABES Engineering College</li>
+                     <li><span>2018-2019</span><br>Intermediate School from ALMA MATER-THE SCHOOL</li>
+                     <li><span>2016-2017</span><br>High School from ALMA MATER-THE SCHOOL</li>
+                  </ul>
+               </div> 
+            </div>
+         </div>
+      </div>
+    </div>
+
+    <!-- SERVICES-SECTION -->
+
+    <div id="services">
+      <div class="container">
+         <h1 class="subtitle">My Services</h1>
+         <div class="services-list">
+            <div>
+               <i class="fa-solid fa-crop"></i>
+               <h2>Front-End Design</h2>
+               <p>Front-end design, also known as front-end development, refers to the process of designing and developing the user interface (UI) and user experience (UX) of a website or application. It involves creating the visual and interactive elements that users see and interact with on a website or application, such as buttons, menus, forms, and content layout.</p>
+               <a href="https://www.w3schools.com/whatis/whatis_frontenddev.asp"><br>Learn More</a>
+            </div>
+            <div>
+               <i class="fas fa-code"></i>
+               <h2>Python</h2>
+               <p>Python is an object-oriented language, which means that it allows programmers to create and manipulate objects with attributes and methods. It has a large standard library, which includes modules for a wide range of tasks such as web development, data analysis, and machine learning.</p>
+               <a href="https://www.javatpoint.com/python-tutorial"><br>Learn More</a>
+            </div>
+            <div>
+               <i class="fa-solid fa-plus"></i>
+               <h2>Mathematics</h2>
+               <p>Mathematics is the study of numbers, quantity, and space. It is a broad subject that encompasses various subfields such as algebra, geometry, calculus, statistics, and more.</p>
+               <a href="https://www.javatpoint.com/math"><br>Learn More</a>
+            </div>
+         </div>
+      </div>
+    </div>
+
+    <!-- PORTFOLIO-SECTION -->/
+
+    <div id="portfolio">
+      <div class="container">
+         <h1 class="sub-title">My Projects</h1>
+         <div class="work-list">
+            <div class="work">
+               <img src="Images/work-1.jpeg">
+               <div class="layer">
+                  <h3>Online Billing System</h3>
+                  <p>An online billing system is a web-based platform that enables businesses to create and manage invoices and bills electronically. </p>
+                  <a href="https://github.com/Shivu20/Online-Billing-System"><i class="fa-solid fa-link"></i></a>
+               </div>
+            </div>
+            <div class="work">
+               <img src="Images/work-2.jpeg">
+               <div class="layer">
+                  <h3>Air Quality UCI</h3>
+                  <p>Air quality UCI refers to the Air Quality Index (AQI) provided by the University of California, Irvine (UCI). The AQI is a measure of how polluted the air is in a particular area.</p>
+                  <a href="https://github.com/Shivu20/AirQualityUCI"><i class="fa-solid fa-link"></i></a>
+               </div>
+            </div>
+            <div class="work">
+               <img src="Images/work-3.jpg">
+               <div class="layer">
+                  <h3>Portfolio Website</h3>
+                  <p>A portfolio website is a website that showcases an individual or company's work, projects, and accomplishments. It serves as a digital portfolio, representation of their skills, experience, and expertise.</p>
+                  <a href="https://github.com/Shivu20/Portfolio-Website"><i class="fa-solid fa-link"></i></a>
+               </div>
+            </div>
+         </div>
+         <a href="#" class="btn">See More</a>
+      </div>
+    </div>
+
+    <!-- CONTACT-SECTIONS -->
+    <div id="contact">
+      <div class="container">
+         <div class="row">
+            <div class="contact-left">
+               <h1 class="sub-title">Contact Me</h1>
+               <p><i class="fa-solid fa-envelope"></i>shivam216702@gmail.com</p>
+               <p><i class="fa-solid fa-phone"></i>9305719200</p>
+               <div class="Social-icons">
+                  <a href="https://www.linkedin.com/in/shivam-gupta-446274243/"><i class="fa-brands fa-linkedin"></i></a>
+                  <a href="https://github.com/Shivu20"><i class="fa-brands fa-github"></i></a>
+                  <a href="https://github.com/Shivu20"><i class="fa-brands fa-facebook"></i></a>
+               </div>
+               <a href="Images/Resume_update.pdf" download class="btn btn2">Download Resume</a>
+            </div>
+            <div class="contact-right">
+               <form name="submit-to-google-sheet">
+                  <input type="text" name="Name" placeholder="Your Name" required>
+                  <input type="email" name="Email" placeholder="Your Email" required>
+                  <textarea name="Message" rows="6" placeholder="Your messsage"></textarea>
+                  <button type="Submit" class="btn btn2">Submit</button>
+               </form>
+               <span id="msg"></span>
+            </div>
+         </div>
+      </div>
+      <div class="copyright">
+         <p>Copyright +king. Made by <i class="fa-solid fa-heart"></i> Shivam Gupta</p>
+      </div>
+    </div>
+
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+      function opentab(tabname){
+         for(tablink of tablinks)
+         {
+            tablink.classList.remove("active-links");
+         }
+         for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+         }
+         event.currentTarget.classList.add("active-links");
+         document.getElementById(tabname).classList.add("active-tab");
+      }
+    </script>
+
+    <script>
+      var sidemenu=document.getElementById("sidemenu")
+      function openmenu(){
+         sidemenu.style.right = "0";
+      }
+      function closemenu(){
+         sidemenu.style.right = "-200px";
+      }
+    </script>
+    <script>
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbxgaAHhMjarTR7NB2OHAk5AUbqaO9Xft14F7W3Wi1FnaI8DJfOxFdFXeLCtNN75woFczw/exec'
+      const form = document.forms['submit-to-google-sheet']
+      const msg = document.getElementById("msg")
+    
+      form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+          .then(response => {
+            msg.innerHTML = "Message Sent Successfully"
+            setTimeout(function(){
+               msg.innerHTML=""
+            },5000)
+            form.reset()
+          })
+          .catch(error => console.error('Error!', error.message))
+      })
+    </script>
+ </body>
+ </html>
